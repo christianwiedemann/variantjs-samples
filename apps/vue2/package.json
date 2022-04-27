@@ -1,0 +1,29 @@
+{
+  "name": "@eep-ds/vue2",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.16.7",
+    "@storybook/addon-a11y": "^6.4.19",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-docs": "^6.4.22",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/vue": "^6.4.19",
+    "vue-loader": "^15.9.8",
+    "vue-template-babel-compiler": "^1.1.3",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "dependencies": {
+    "@variantjs/core": "^0.0.87",
+    "@vue/composition-api": "^1.0.0-rc.1",
+    "vue": "^2.6.14",
+    "vue-demi": "^0.12.1"
+  },
+  "scripts": {
+    "storybook": "vue-demi-switch 2 && start-storybook -p 6002",
+    "build-storybook": "build-storybook"
+  }
+}

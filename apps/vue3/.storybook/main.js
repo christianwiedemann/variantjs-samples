@@ -14,7 +14,7 @@ module.exports = {
         },
       },
     },
-
+    '@storybook/addon-essentials',
   ],
   "framework": "@storybook/vue3"
 }
