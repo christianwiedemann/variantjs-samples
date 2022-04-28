@@ -8,7 +8,6 @@ export default function useConfigurationWithClassesList<ComponentOptions extends
   configuration: ComponentOptions,
 } {
   const vm = getCurrentInstance()!;
-
   const { propsValues, componentGlobalConfiguration } = useConfigurationParts<ComponentOptions>();
   parseVariantWithClassesList(
     propsValues.value,

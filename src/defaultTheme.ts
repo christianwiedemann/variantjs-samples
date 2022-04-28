@@ -28,7 +28,5 @@ export const theme: VariantJSConfiguration = {
     fixedClasses: {
       default: 'btn'
     },
-    classes: {
-    }
   }
 }

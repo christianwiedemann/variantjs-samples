@@ -1,8 +1,6 @@
 import { WithVariantPropsAndClassesList, Data } from '@variantjs/core';
 
 export declare const TButtonConfig: {
-  size: string;
-  color: string;
   classes: {
     default: string;
     size: string;
@@ -13,5 +11,4 @@ export declare const TButtonConfig: {
 export type TButtonClassesValidKeys = keyof typeof TButtonConfig.classes;
 
 export type TButtonOptions = WithVariantPropsAndClassesList<{
-  color:string
 }  & Data, TButtonClassesValidKeys>;

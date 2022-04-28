@@ -3,7 +3,7 @@ import {
 } from 'vue-demi';
 const camelize = require('camelize');
 import {
-  Data, get, parseVariantWithClassesList
+  Data, get
 } from '@variantjs/core';
 import { VariantJSConfiguration } from '../types/index';
 
@@ -27,13 +27,10 @@ export function useConfigurationParts<ComponentOptions extends Data>(): {
   const componentGlobalConfiguration = get<VariantJSConfiguration, ComponentOptions>(variantGlobalConfiguration, vm?.type.name as keyof VariantJSConfiguration, {});
   const propsValues = computed(() => {
     const values: Data = {};
-    console.log(vm.props);
     extractDefinedProps(vm).forEach((attributeName) => {
       const normalizedAttribute = camelize(attributeName);
       values[normalizedAttribute] = vm.props[normalizedAttribute];
     });
-    console.log('values')
-    console.log(values)
     return values;
   });
   return {
